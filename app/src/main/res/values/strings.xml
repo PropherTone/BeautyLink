@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BeautyLink</string>
+    <string name="privacy_link">PRIVACY PAGE</string>
+    <string name="failed">Failed</string>
+    <string name="refreshing_score">REFRESHING SCORE</string>
+    <string name="blocked">BLOCKED</string>
+    <string name="log_in_title">LOG IN</string>
+    <string name="account_title">ACCOUNT</string>
+    <string name="password_title">PASSWORD</string>
+    <string name="input_password">INPUT PASSWORD</string>
+    <string name="input_account">INPUT ACCOUNT</string>
+    <string name="account_must_not_be_null">Account must not be null !</string>
+    <string name="password_must_not_be_null">Password must not be null !</string>
+    <string name="the_password_must_be_six_digits_or_more">Password must be six digits or more !</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="login_failed">Login failed</string>
+    <string name="input_password_again">INPUT PASSWORD AGAIN</string>
+    <string name="entered_passwords_differ">Entered passwords differ !</string>
+    <string name="network_error">NETWORK ERROR</string>
+    <string name="range_200_20000">range 200-20000</string>
+    <string name="recharge">RECHARGE</string>
+</resources>

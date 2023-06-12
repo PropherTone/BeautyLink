@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/blank">
+
+    <ImageView
+        android:id="@+id/dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/link_settings_dialog"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:src="@mipmap/link_close_icon"
+        app:layout_constraintEnd_toEndOf="@id/dialog"
+        app:layout_constraintTop_toTopOf="@id/dialog"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input_rectangle_back"
+        android:hint="@string/range_200_20000"
+        android:inputType="text"
+        android:padding="6dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/sub_text_color"
+        app:layout_constraintBottom_toBottomOf="@id/dialog"
+        app:layout_constraintEnd_toEndOf="@id/dialog"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/dialog"
+        app:layout_constraintTop_toTopOf="@id/dialog"
+        app:layout_constraintVertical_bias="0.32"
+        app:layout_constraintWidth_percent="0.7"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/button100"
+        android:layout_width="52dp"
+        android:layout_height="24dp"
+        android:background="@drawable/orange_btn"
+        android:text="100"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button200"
+        android:layout_width="52dp"
+        android:layout_height="24dp"
+        android:background="@drawable/orange_btn"
+        android:text="200"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button500"
+        android:layout_width="52dp"
+        android:layout_height="24dp"
+        android:background="@drawable/orange_btn"
+        android:text="500"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button1000"
+        android:layout_width="52dp"
+        android:layout_height="24dp"
+        android:background="@drawable/orange_btn"
+        android:text="1000"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button3000"
+        android:layout_width="52dp"
+        android:layout_height="24dp"
+        android:background="@drawable/orange_btn"
+        android:text="3000"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button5000"
+        android:layout_width="56dp"
+        android:layout_height="24dp"
+        android:background="@drawable/orange_btn"
+        android:text="5000"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button10000"
+        android:layout_width="56dp"
+        android:layout_height="24dp"
+        android:background="@drawable/orange_btn"
+        android:text="10000"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button20000"
+        android:layout_width="56dp"
+        android:layout_height="24dp"
+        android:background="@drawable/orange_btn"
+        android:text="20000"
+        android:textColor="@color/white"
+        tools:ignore="HardcodedText" />
+
+    <androidx.constraintlayout.helper.widget.Flow
+        android:id="@+id/score_chain"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="button100,button200,button500,button1000,button3000,button5000,button10000,button20000"
+        app:flow_verticalGap="8dp"
+        app:flow_wrapMode="chain2"
+        app:layout_constraintBottom_toTopOf="@id/recharge"
+        app:layout_constraintEnd_toEndOf="@id/input"
+        app:layout_constraintStart_toStartOf="@id/input"
+        app:layout_constraintTop_toBottomOf="@id/input"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <ImageView
+        android:id="@+id/recharge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/link_recharge_icon"
+        app:layout_constraintBottom_toBottomOf="@id/dialog"
+        app:layout_constraintEnd_toEndOf="@id/input"
+        app:layout_constraintStart_toStartOf="@id/input"
+        app:layout_constraintTop_toBottomOf="@id/score_chain"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
